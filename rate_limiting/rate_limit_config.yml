@@ -1,0 +1,88 @@
+# Rate Limiting Configuration
+# Defines rate limiting policies for the API
+
+rate_limiting:
+  enabled: true
+  strategy: 'token_bucket'  # Options: 'token_bucket', 'sliding_window'
+  
+  global:
+    # Global rate limit settings
+    max_requests_per_minute: 6000
+    max_requests_per_hour: 300000
+  
+  per_client:
+    # Per-client rate limit settings
+    strategy: 'token_bucket'
+    tokens_per_second: 100
+    bucket_capacity: 200
+    
+  adaptive:
+    # Adaptive rate limiting based on system load
+    enabled: true
+    base_rate: 100
+    load_factor_adjustment: true
+    min_rate: 10
+    max_rate: 1000
+  
+  whitelist:
+    # IPs/User-Agents that are exempt from rate limiting
+    enabled: false
+    ips: []
+    user_agents: []
+  
+  burst_allowance:
+    # Allow burst traffic up to this percentage of the rate limit
+    percentage: 50
+    window_seconds: 60
+  
+  responses:
+    # Response behavior when rate limit is exceeded
+    status_code: 429
+    retry_after_header: true
+    include_remaining: true
+    custom_message: "Rate limit exceeded. Please try again later."
+
+# API Endpoint specific limits
+endpoints:
+  /api/generate:
+    enabled: true
+    requests_per_minute: 30
+    requests_per_hour: 500
+    burst_size: 5
+  
+  /api/health:
+    enabled: false  # Health checks are typically exempt
+  
+  /api/analyze:
+    enabled: true
+    requests_per_minute: 10
+    requests_per_hour: 200
+    burst_size: 3
+
+# User-based rate limits
+users:
+  default:
+    requests_per_minute: 30
+    requests_per_hour: 500
+  
+  premium:
+    requests_per_minute: 300
+    requests_per_hour: 5000
+  
+  enterprise:
+    requests_per_minute: 10000
+    requests_per_hour: null  # No hourly limit
+
+# Monitoring and alerts
+monitoring:
+  enabled: true
+  track_violations: true
+  alert_threshold: 0.8  # Alert when 80% of limit is reached
+  log_level: 'INFO'
+
+# Persistence
+persistence:
+  enabled: false
+  backend: 'redis'  # Options: 'redis', 'memcached', 'memory'
+  redis_url: '${REDIS_URL:-redis://localhost:6379}'
+  ttl_seconds: 3600
