@@ -96,3 +96,18 @@ These stories continue the satirical narrative on contemporary lifestyle and wel
 - Digital marketing & monetization strategy
 - Self-improvement & guru culture
 - Modern lifestyle trends & social commentary
+
+
+## Perplexity Pro API Migration (Day 14)
+
+.env.example: https://github.com/Spirix198/faberlic-satire-rag/blob/main/.env.example
+PERPLEXITY_SETUP.md: https://github.com/Spirix198/faberlic-satire-rag/blob/main/PERPLEXITY_SETUP.md
+api.py (refactored): https://github.com/Spirix198/faberlic-satire-rag/blob/main/api.py
+requirements.txt (updated): https://github.com/Spirix198/faberlic-satire-rag/blob/main/requirements.txt
+
+Migration Details:
+- Replaced OpenAI API with Perplexity Pro API
+- Implemented secure environment variable configuration
+- Added comprehensive setup documentation
+- Full API compatibility maintained for all endpoints
+- Enterprise-grade security implementation
