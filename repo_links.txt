@@ -1,2 +1,8 @@
 GitHub repo: https://github.com/Spirix198/faberlic-satire-rag
 Dashboard: https://docs.google.com/spreadsheets/d/1KRpJOnWfFvA_f9BjGQ9DW9CAUrOBlrq1hViH8wqDEXQ/
+
+
+## Documentation Files (Day 2)
+Platforms Analysis: https://github.com/Spirix198/faberlic-satire-rag/blob/main/docs/platforms_analysis.md
+Style Guide: https://github.com/Spirix198/faberlic-satire-rag/blob/main/docs/style_guide.md
+Content Matrix: https://github.com/Spirix198/faberlic-satire-rag/blob/main/docs/content_matrix.md
