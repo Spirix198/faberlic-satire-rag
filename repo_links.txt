@@ -80,3 +80,19 @@ These stories continue the satirical narrative on contemporary topics. Content i
 - Fitness culture & gym obsession
 - Online dating algorithms & matching
 - Work-from-home lifestyle trends
+
+
+## Content Generation Week 3 (Day 12)
+
+Week 3 Satirical Stories (published to multiple platforms):
+- Story 1 (Minimalism style): https://github.com/Spirix198/faberlic-satire-rag/blob/main/content/week3/story1_minimalism_organic_petrov.md
+- Story 2 (Cryptocurrency style): https://github.com/Spirix198/faberlic-satire-rag/blob/main/content/week3/story2_crypto_blockchain_smirnov.md
+- Story 3 (Lifestyle style): https://github.com/Spirix198/faberlic-satire-rag/blob/main/content/week3/story3_cats_lifestyle_sokolov.md
+- Story 4 (Diet trends style): https://github.com/Spirix198/faberlic-satire-rag/blob/main/content/week3/story4_diets_trends_lebedev.md
+- Story 5 (Self-help gurus style): https://github.com/Spirix198/faberlic-satire-rag/blob/main/content/week3/story5_gurus_coaching_petrov.md
+
+These stories continue the satirical narrative on contemporary lifestyle and wellness trends. Content includes:
+- Health culture & wellness obsession
+- Digital marketing & monetization strategy
+- Self-improvement & guru culture
+- Modern lifestyle trends & social commentary
