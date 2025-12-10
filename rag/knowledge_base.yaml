@@ -1,0 +1,43 @@
+# Knowledge Base Configuration for RAG System
+
+knowledge_base:
+  name: "Faberlic Satire RAG Knowledge Base"
+  version: "1.0"
+  description: "Knowledge base for satirical content generation about Faberlic MLM"
+
+# Document sources
+sources:
+  - type: "markdown"
+    path: "content/"
+    recursive: true
+    extensions: [".md"]
+  
+  - type: "text"
+    path: "data/"
+    recursive: true
+    extensions: [".txt"]
+
+# Embedding configuration
+embedding:
+  model: "sentence-transformers/all-MiniLM-L6-v2"
+  dimension: 384
+  batch_size: 32
+
+# Vector store configuration
+vector_store:
+  type: "faiss"
+  index_type: "flat"
+  metric: "cosine"
+  normalize: true
+
+# Retrieval parameters
+retrieval:
+  top_k: 5
+  similarity_threshold: 0.3
+  enable_hybrid_search: false
+
+# Processing
+processing:
+  chunk_size: 512
+  chunk_overlap: 100
+  remove_duplicates: true
