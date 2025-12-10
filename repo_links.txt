@@ -111,3 +111,12 @@ Migration Details:
 - Added comprehensive setup documentation
 - Full API compatibility maintained for all endpoints
 - Enterprise-grade security implementation
+
+## Advanced Caching System (Day 15)
+Cache Manager: https://github.com/Spirix198/faberlic-satire-rag/blob/main/caching/cache_manager.py
+LRU Cache Implementation: https://github.com/Spirix198/faberlic-satire-rag/blob/main/caching/lru_cache.py
+Caching Configuration: https://github.com/Spirix198/faberlic-satire-rag/blob/main/caching/cache_config.yml
+
+## Production Monitoring & Logging (Day 16)
+Metrics Collection: https://github.com/Spirix198/faberlic-satire-rag/blob/main/monitoring/metrics.py
+Prometheus Configuration: https://github.com/Spirix198/faberlic-satire-rag/blob/main/monitoring/prometheus_config.yml
