@@ -32,3 +32,8 @@ CI/CD Pipeline: https://github.com/Spirix198/faberlic-satire-rag/blob/main/.gith
 ## Monitoring & Analytics (Day 7)
 Prometheus Config: https://github.com/Spirix198/faberlic-satire-rag/blob/main/monitoring/prometheus_config.yml
 Event Tracking: https://github.com/Spirix198/faberlic-satire-rag/blob/main/analytics/event_tracking.py
+
+
+## RAG System Integration (Day 8)
+RAG Retriever: https://github.com/Spirix198/faberlic-satire-rag/blob/main/rag/retriever.py
+Knowledge Base Config: https://github.com/Spirix198/faberlic-satire-rag/blob/main/rag/knowledge_base.yaml
