@@ -23,3 +23,7 @@ Social Media Automation: https://github.com/Spirix198/faberlic-satire-rag/blob/m
 Unit Tests: https://github.com/Spirix198/faberlic-satire-rag/blob/main/tests/test_api.py
 Docker Configuration: https://github.com/Spirix198/faberlic-satire-rag/blob/main/Dockerfile
 Python Requirements: https://github.com/Spirix198/faberlic-satire-rag/blob/main/requirements.txt
+
+
+## CI/CD & Monitoring (Day 6)
+CI/CD Pipeline: https://github.com/Spirix198/faberlic-satire-rag/blob/main/.github/workflows/ci-cd.yml
