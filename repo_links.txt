@@ -137,3 +137,48 @@ Features:
 - Models: User, APIKey, Content, Analytics, SystemMetadata, RAGVector
 - UUID primary keys for security
 - Automatic timestamps and indexing
+
+
+## API Endpoints & Database Integration (Day 24)
+
+Content CRUD Operations:
+- api/routes/content.py: https://github.com/Spirix198/faberlic-satire-rag/blob/main/api/routes/content.py
+
+Key Features:
+- POST /api/content — Create new content entry in database
+- GET /api/content/{content_id} — Retrieve specific content with analytics
+- GET /api/content/list — List all content with pagination and filtering
+- PATCH /api/content/{content_id} — Update content metadata
+- DELETE /api/content/{content_id} — Remove content
+- Integrated database persistence with SQLAlchemy ORM
+- Analytics tracking per endpoint call
+- Authorization via header tokens
+
+## User Authentication & JWT Security (Day 25)
+
+Password & Token Management:
+- auth/jwt_utils.py: https://github.com/Spirix198/faberlic-satire-rag/blob/main/auth/jwt_utils.py
+
+Key Features:
+- PasswordUtils: bcrypt hashing and verification
+- JWTUtils: access token (15 min) and refresh token (7 days) generation
+- Token verification with signature validation
+- Refresh token mechanism for seamless session continuation
+- TokenPayload and TokenResponse models
+- Secure token expiry and revocation support
+
+## Demo & Launch Guide (DEMO.md)
+
+Comprehensive Demonstration & Deployment Manual:
+- DEMO.md: https://github.com/Spirix198/faberlic-satire-rag/blob/main/DEMO.md
+
+Key Features:
+- Quick-start local development setup (git clone, .env configuration, pip install)
+- Docker containerization and deployment (Dockerfile, docker-compose)
+- Example API requests and responses (curl and Python)
+- Project directory structure and file descriptions
+- Required environment variables (PERPLEXITY_API_KEY, JWT_SECRET, DATABASE_URL)
+- Security configuration overview (JWT, password hashing, CORS, rate limiting, security headers)
+- Troubleshooting guide for common issues (dependencies, database, API keys)
+- Production deployment strategies (AWS EC2, Heroku, Docker Compose, manual)
+- Supports Linux/Mac and Windows environments
