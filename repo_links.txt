@@ -182,3 +182,23 @@ Key Features:
 - Troubleshooting guide for common issues (dependencies, database, API keys)
 - Production deployment strategies (AWS EC2, Heroku, Docker Compose, manual)
 - Supports Linux/Mac and Windows environments
+
+
+## Database Migrations & Alembic System (Day 26)
+
+Database Migration Management:
+- alembic.ini: https://github.com/Spirix198/faberlic-satire-rag/blob/main/alembic.ini
+- alembic/env.py: https://github.com/Spirix198/faberlic-satire-rag/blob/main/alembic/env.py
+- alembic/versions/001_initial_schema.py: https://github.com/Spirix198/faberlic-satire-rag/blob/main/alembic/versions/001_initial_schema.py
+
+Key Features:
+- Alembic configuration for SQLAlchemy ORM database migrations
+- Offline and online migration execution modes
+- Automatic detection of model changes from Base metadata
+- Initial schema migration: Creates all tables (user_account, api_key, content, analytics, system_metadata, rag_vector)
+- Foreign key constraints with cascade deletion
+- Performance indexes on frequently queried columns
+- Bidirectional upgrade/downgrade functions
+- Support for PostgreSQL, MySQL, and SQLite databases
+- Environment-based DATABASE_URL configuration
+- Migration history tracking for reproducible deployments
