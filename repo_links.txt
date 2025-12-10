@@ -17,3 +17,9 @@ Configuration: https://github.com/Spirix198/faberlic-satire-rag/blob/main/config
 ## API & Automation Scripts (Day 4)
 Content Generation API: https://github.com/Spirix198/faberlic-satire-rag/blob/main/api.py
 Social Media Automation: https://github.com/Spirix198/faberlic-satire-rag/blob/main/automation.py
+
+
+## Testing & Deployment Configuration (Day 5)
+Unit Tests: https://github.com/Spirix198/faberlic-satire-rag/blob/main/tests/test_api.py
+Docker Configuration: https://github.com/Spirix198/faberlic-satire-rag/blob/main/Dockerfile
+Python Requirements: https://github.com/Spirix198/faberlic-satire-rag/blob/main/requirements.txt
