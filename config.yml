@@ -1,0 +1,58 @@
+# Platform Configuration for Faberlic Satire RAG
+
+platforms:
+  instagram:
+    enabled: true
+    posting_schedule:
+      monday: ['09:00', '15:00']
+      wednesday: ['10:00', '16:00']
+      friday: ['11:00', '17:00']
+    affiliate_link: 'https://faberlic.com/ref/satire'
+    hashtags: ['#Faberlic', '#Satire', '#BeautyHumor']
+    content_type: 'image_carousel'
+
+  tiktok:
+    enabled: true
+    posting_schedule:
+      daily: ['18:00', '20:00']
+    affiliate_link: 'https://faberlic.com/tiktok/satire'
+    content_type: 'short_video'
+    duration_max: 60
+
+  facebook:
+    enabled: true
+    posting_schedule:
+      monday: ['14:00']
+      thursday: ['19:00']
+    affiliate_link: 'https://facebook.com/faberlic-satire'
+    content_type: 'mixed'
+
+  youtube:
+    enabled: true
+    posting_schedule:
+      weekly: 'sunday 19:00'
+    affiliate_link: 'https://youtube.com/@faberlic-satire'
+    content_type: 'video'
+    min_duration: 120
+
+llm_settings:
+  model: 'gpt-4'
+  temperature: 0.7
+  max_tokens: 2000
+  system_prompt: 'You are a satirical content creator for Faberlic products.'
+
+content_generation:
+  batch_size: 5
+  refresh_interval: 3
+  languages: ['en', 'ru']
+  tone: 'satirical_witty'
+  target_audience: 'millennials_gen_z'
+
+analytics:
+  tracking_enabled: true
+  metrics:
+    - engagement_rate
+    - click_through_rate
+    - conversion_rate
+  daily_report: true
+  report_time: '09:00'
