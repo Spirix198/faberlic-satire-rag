@@ -6,3 +6,9 @@ Dashboard: https://docs.google.com/spreadsheets/d/1KRpJOnWfFvA_f9BjGQ9DW9CAUrOBl
 Platforms Analysis: https://github.com/Spirix198/faberlic-satire-rag/blob/main/docs/platforms_analysis.md
 Style Guide: https://github.com/Spirix198/faberlic-satire-rag/blob/main/docs/style_guide.md
 Content Matrix: https://github.com/Spirix198/faberlic-satire-rag/blob/main/docs/content_matrix.md
+
+
+## Content & Configuration Files (Day 3)
+Sample Posts: https://github.com/Spirix198/faberlic-satire-rag/blob/main/content/sample_posts.md
+Content Generation Prompts: https://github.com/Spirix198/faberlic-satire-rag/blob/main/prompts/content_generation_prompts.md
+Configuration: https://github.com/Spirix198/faberlic-satire-rag/blob/main/config.yml
