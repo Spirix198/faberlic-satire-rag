@@ -1,0 +1,43 @@
+# Prometheus Configuration for Faberlic RAG Monitoring
+# This configuration file sets up metrics collection for the application
+
+global:
+  scrape_interval: 15s  # Default scrape interval
+  evaluation_interval: 15s
+  external_labels:
+    monitor: 'faberlic-satire-rag-monitor'
+
+# Alertmanager configuration
+alerting:
+  alertmanagers:
+    - static_configs:
+        - targets:
+          # - 'alertmanager:9093'
+
+# Load rules once and periodically evaluate them
+rule_files:
+  # - 'alert_rules.yml'
+
+# Scrape configurations
+scrape_configs:
+  # Prometheus self-monitoring
+  - job_name: 'prometheus'
+    static_configs:
+      - targets: ['localhost:9090']
+
+  # FastAPI application metrics
+  - job_name: 'faberlic-api'
+    static_configs:
+      - targets: ['localhost:8000']
+    metrics_path: '/metrics'
+    scrape_interval: 10s
+
+  # Node exporter for system metrics
+  - job_name: 'node'
+    static_configs:
+      - targets: ['localhost:9100']
+
+  # Docker stats via cAdvisor
+  - job_name: 'docker'
+    static_configs:
+      - targets: ['localhost:8080']
